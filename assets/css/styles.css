@@ -1307,7 +1307,7 @@ body.dark-theme .nav__logo img{
 
 .contact__icon {
     font-size: 2rem;
-    columns: var(--first-color);
+    color: var(--first-color);
     margin-right: var(--mb-0-75);
 }
 
