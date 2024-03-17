@@ -142,12 +142,12 @@ a {
     color: var(--text-color);
 }
 
-.main,
+/* .main,
 .header,
 .footer {
-    /* display: none; */
-    /* display: block; */
-}
+    display: none;
+    display: block;
+} */
 
 /* cursor animation */
 
