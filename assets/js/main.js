@@ -421,40 +421,46 @@ window.addEventListener("scroll", () => {
 
 const themeButton = document.getElementById("theme-button");
 
-// previosuly selected topic if(user slected)
+// // previosuly selected topic if(user slected)
 
-const selectedTheme = localStorage.getItem("selected-theme");
-const selectedIcon = localStorage.getItem("selected-icon");
+// const selectedTheme = localStorage.getItem("selected-theme");
+// const selectedIcon = localStorage.getItem("selected-icon");
 
-let presenTheme = "";
-// obtain current theme
-const getCurrentTheme = () =>
-    document.body.classList.contains(darkTheme) ? "dark" : "light";
-const getCurrentIcon = () =>
-    themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
+// let presenTheme = "";
+// // obtain current theme
+// const getCurrentTheme = () =>
+//     document.body.classList.contains(darkTheme) ? "dark" : "light";
+// const getCurrentIcon = () =>
+//     themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
 
-if (selectedTheme) {
-    presenTheme = selectedTheme;
+//     console.log(selectedTheme);
 
-    document.body.classList[selectedTheme === "light-theme" ? "remove" : "add"](
-        "dark-theme"
-    );
-    themeButton.classList[selectedIcon === "uil-sun" ? "remove" : "add"](
-        "uil-moon"
-    );
-} else {
-    document.body.classList[!selectedTheme ? "add" : "remove"]("dark-theme");
-    themeButton.classList[!selectedIcon ? "add" : "remove"]("uil-sun");
-}
+// if (selectedTheme) {
+
+//     presenTheme = selectedTheme;
+
+//     console.log("if"+[selectedTheme === "light-theme" ? "remove" : "add"]);
+
+//     document.body.classList[selectedTheme === "light-theme" ? "remove" : "add"](
+//         "dark-theme"
+//     );
+//     themeButton.classList[selectedIcon === "uil-sun" ? "remove" : "add"](
+//         "uil-moon"
+//     );
+// } else {
+//     console.log("else"+[!selectedTheme ? "add" : "remove"]);
+//     document.body.classList[!selectedTheme ? "add" : "remove"]("dark-theme");
+//     themeButton.classList[!selectedIcon ? "add" : "remove"]("uil-sun");
+// }
 
 themeButton.addEventListener("click", () => {
-    if (presenTheme === "light-theme") {
-        localStorage.clear();
-    } else {
-        localStorage.setItem("selected-theme", "light-theme");
-        localStorage.setItem("selected-icon", "uil-moon");
-    }
-
+    // if (presenTheme === "light-theme") {
+    //     localStorage.clear();
+    // } else {
+    //     localStorage.setItem("selected-theme", "light-theme");
+    //     localStorage.setItem("selected-icon", "uil-moon");
+    // }
+    console.log("Theme button clicked");
     document.body.classList.toggle("dark-theme");
     themeButton.classList.toggle("uil-sun");
 });
@@ -572,14 +578,14 @@ themeButton.addEventListener("click", () => {
 //     }
 // }
 
-function validatephonenumber(inputtxt) {
-    var phoneno = /^\d{10}$/;
-    if (inputtxt.match(phoneno)) {
-        return true;
-    } else {
-        return false;
-    }
-}
+// function validatephonenumber(inputtxt) {
+//     var phoneno = /^\d{10}$/;
+//     if (inputtxt.match(phoneno)) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
 
 // forchanging theme
 const colorThemeButton = document.getElementsByClassName("theme__button")[0],

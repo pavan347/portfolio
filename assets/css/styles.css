@@ -14,7 +14,7 @@
     --header-height: 3rem;
     /* ===========COLORS =========== */
     /* change favourite color */
-    --hue-color: 210;
+    --hue-color: 250;
     /* 250 142 230 340 */
     /* ========= HSL COLOR MODE ===== */
     --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -1478,6 +1478,10 @@ body.dark-theme .nav__logo img{
 
 .certificate__bg.css-hackerrank {
     background-image: url(../Certifications/CSS\ \(Hackerrank\).jpeg);
+}
+
+.certificate__bg.aws-cloud-computing {
+    background-image: url(../Certifications/AWS-Internshalla.png);
 }
 
 
